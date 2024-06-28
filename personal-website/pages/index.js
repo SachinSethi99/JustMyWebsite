@@ -38,16 +38,14 @@ const Home = () => (
                 </div>
             </section>
 
-            <Element name="education" className="bg-white text-darkGray p-8">
+            <Element name="about" className="bg-white text-darkGray p-8">
                 <h2 className="text-3xl font-bold text-teal-400 mb-4">About Me</h2>
                 <p className="text-lg leading-relaxed text-justify">
-                    Hi there I'm Sachin as you can see as this website is about me and everything but me! 👋 I'm also a passionate Software Engineer who loves mixing up .NET, Java, Python, and AWS to cook up amazing user experiences. With a strong skill set in JavaScript, React.js, Node.js, and MySQL, I whip up innovative solutions that ensure top-notch performance and seamless functionality. 💻✨
-                    I've had the pleasure of coding adventures with TYDIUP, Light & Wonder, and CGI, where I've developed scalable solutions, optimized cloud infrastructure, and boosted product functionality and efficiency through Agile and DevOps practices. My experience includes managing PostgreSQL databases in AWS and crafting secure authentication frameworks with Firebase. 🚀📚
-                    I’m all about leading projects with a sprinkle of creativity, promoting knowledge exchange, and supporting growth within our tech community. My flexible approach to technology means I can quickly adapt and continuously improve system performance and user engagement across various business environments. As the digital landscape evolves, so does my ambition to make a significant impact on the industry. 🌟🤝
-
-                    When I'm not coding, I'm an avid sports fan. I love football and cheer for Manchester United ⚽🔴. I'm also a huge cricket fan, rooting for Chennai Super Kings in the IPL and Team India 🇮🇳 (Chak de India!). 🏏 Besides that, I enjoy watching boxing and UFC – nothing like some good old-fashioned punches and kicks! 🥊🥋
-
-                    Let’s build the future together! Feel free to reach out! 📬
+                    Hi, I'm Sachin! As you can see, this website is all about me... but mostly not! 👋 I'm a Software Engineer who loves mixing .NET, Java, Python, and AWS to cook up amazing user experiences. With skills in JavaScript, React.js, Node.js, and MySQL, I whip up innovative solutions that ensure top-notch performance and seamless functionality. 💻✨
+                    I've had coding adventures with TYDIUP, Light & Wonder, and CGI, developing scalable solutions, optimizing cloud infrastructure, and boosting product efficiency with Agile and DevOps magic. 🚀📚 My toolkit includes PostgreSQL in AWS and crafting secure authentication with Firebase.
+                    I lead projects with creativity, promote knowledge exchange, and support our tech community. My adaptable approach means I can improve system performance and user engagement across various environments. 🌟🤝 As the digital world evolves, so does my ambition to make a significant impact.
+                    When I'm not coding, I'm a sports fanatic. I cheer for Manchester United ⚽🔴, Chennai Super Kings in the IPL, and Team India 🇮🇳 (Chak de India!). 🏏 I also enjoy boxing and UFC – nothing like some good old-fashioned punches and kicks! 🥊🥋
+                    Let’s build the future together! Reach out! 📬
                 </p>
             </Element>
 
@@ -120,7 +118,7 @@ const Home = () => (
                     <ul className="list-disc list-inside ml-4">
                         <li>🔗 Integrated Twilio and Google Maps APIs to make user interactions super smooth and fun! 🚀</li>
                         <li>📊 Managed PostgreSQL databases in AWS RDS, making sure our data storage is always high-performing and reliable. No lost data on my watch! 💾</li>
-                        <li>🔧 Created API endpoints using Node.js for all the important stuff like user registration, verification, database integration, and session management. Basically, making everything work like magic! 🪄</li>
+                        <li>🔧 Created API endpoints using Node.js for all the important stuff like user registration, verification, database integration, and session management. Basically, making everything work like magic!</li>
                         <li>☁️ Orchestrated AWS deployment with EC2 and S3, setting up a scalable infrastructure for smooth application hosting. It's all about the cloud, baby! 🌥️</li>
                         <li>🔐 Configured and tested OTP functionality with Twilio and Amazon SNS, using Postman to ensure seamless code verification and validation. Security first! 🛡️</li>
                     </ul>
