@@ -122,22 +122,22 @@ body {
 }
 
 .section {
-  margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
 .section h2 {
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--light-blue);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .about {
   background-color: var(--light-gray);
-  padding: 2rem;
-  border-radius: 20px;
+  padding: 1.5rem;
+  border-radius: 10px;
   margin: 0 2rem;
 }
 
@@ -164,7 +164,7 @@ body {
 }
 
 .job {
-  margin-bottom: 2rem;
+  margin-bottom: 0; /* Removed bottom margin to eliminate gap */
 }
 
 .job h3 {
@@ -324,9 +324,4 @@ body {
 
 .offset {
   padding-top: 2.5rem; /* Adjust this value according to your header height */
-}
-
-.experience,
-.projects {
-  margin-bottom: 1rem; /* Adjust to reduce the gap */
 }
