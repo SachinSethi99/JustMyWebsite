@@ -64,15 +64,14 @@ const Home = () => {
                 </section>
 
                 <Element name="about" className="bg-white text-darkGray p-6 section">
-    <h2 className="text-3xl font-bold text-teal-400 mb-4">About Me 👋</h2>
-    <p className="text-lg leading-relaxed text-justify">
-        Hi, I'm Sachin! 👋 I'm a Software Engineer skilled in <b>.NET</b>, <b>Java</b>, <b>Python</b>, <b>AWS</b>, <b>JavaScript</b>, <b>React.js</b>, <b>Node.js</b>, and <b>MySQL</b>. I create innovative solutions for top-notch performance and seamless functionality. 💻✨
-        I've worked with <b>TYDIUP</b>, <b>Light & Wonder</b>, and <b>CGI</b>, developing scalable solutions and optimizing cloud infrastructure with Agile and DevOps practices. 🚀📚 My toolkit includes <b>PostgreSQL</b> in <b>AWS</b> and secure authentication with <b>Firebase</b>.
-        I'm passionate about leading projects, promoting knowledge exchange, and supporting the tech community. 🌟🤝 When I'm not coding, I'm cheering for Manchester United ⚽🔴, Chennai Super Kings 🏏, and Team India 🇮🇳. I also enjoy boxing and UFC. 🥊🥋
-        Let’s build the future together! Reach out! 📬
-    </p>
-</Element>
-
+                    <h2 className="text-3xl font-bold text-teal-400 mb-4">About Me 👋</h2>
+                    <p className="text-lg leading-relaxed text-justify">
+                        Hi, I'm Sachin! 👋 I'm a Software Engineer skilled in <b>.NET</b>, <b>Java</b>, <b>Python</b>, <b>AWS</b>, <b>JavaScript</b>, <b>React.js</b>, <b>Node.js</b>, and <b>MySQL</b>. I create innovative solutions for top-notch performance and seamless functionality. 💻✨
+                        I've worked with <b>TYDIUP</b>, <b>Light & Wonder</b>, and <b>CGI</b>, developing scalable solutions and optimizing cloud infrastructure with Agile and DevOps practices. 🚀📚 My toolkit includes <b>PostgreSQL</b> in <b>AWS</b> and secure authentication with <b>Firebase</b>.
+                        I'm passionate about leading projects, promoting knowledge exchange, and supporting the tech community. 🌟🤝 When I'm not coding, I'm cheering for Manchester United ⚽🔴, Chennai Super Kings 🏏, and Team India 🇮🇳. I also enjoy boxing and UFC. 🥊🥋
+                        Let’s build the future together! Reach out! 📬
+                    </p>
+                </Element>
 
                 <Element name="education" className="bg-white text-darkGray p-6 section">
                     <h2 className="text-3xl font-bold text-teal-400 mb-4">Education 🎓</h2>
@@ -136,108 +135,100 @@ const Home = () => {
                 </Element>
 
                 <Element name="experience" className="bg-lightGray text-darkGray p-6 section">
-    <h2 className="text-3xl font-bold text-teal-400 mb-4">Experience 💼</h2>
-    <div className="mb-8">
-        <div className="flex justify-between items-start">
-            <h3 className="text-2xl font-bold text-black mb-2">Software Engineer - TYDIUP</h3>
-            <p className="text-lg mb-4 text-justify flex-shrink-0">March 2024 - Present</p>
-        </div>
-        <ul className="list-disc list-outside ml-8 text-justify">
-            <li>🔗 Integrated <b>Twilio</b> and <b>Google Maps APIs</b> to enhance user interaction with real-time notifications and geolocation services.</li>
-            <li>📊 Managed databases using <b>PostgreSQL</b> within <b>AWS RDS</b> for high performance and reliability.</li>
-            <li>🔧 Developed responsive websites using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> to improve user engagement.</li>
-            <li>🔐 Implemented secure authentication with <b>Firebase</b> to protect user data and privacy.</li>
-            <li>🪄 Developed a <b>Node.js</b>-based SSO system for improved user accessibility and security.</li>
-            <li>☁️ Orchestrated <b>AWS</b> deployment using <b>EC2</b> and <b>S3</b> for efficient and scalable infrastructure.</li>
-            <li>✅ Configured and tested OTP functionality with <b>Twilio</b> and <b>Amazon SNS</b> using <b>Postman</b> for code verification.</li>
-        </ul>
-    </div>
-    <div className="mb-8">
-        <div className="flex justify-between items-start">
-            <h3 className="text-2xl font-bold text-black mb-2">Software Engineer - Light & Wonder</h3>
-            <p className="text-lg mb-4 text-justify flex-shrink-0">January 2024 - May 2024</p>
-        </div>
-        <ul className="list-disc list-outside ml-8 text-justify">
-            <li>🔄 Refactored <b>C#</b> backend systems to improve efficiency and code readability.</li>
-            <li>🌍 Directed the launch of an international backend gaming platform.</li>
-            <li>🐛 Addressed critical issues in the backend using <b>C#</b>, reducing system bugs by 10%.</li>
-            <li>💹 Executed SQL queries using <b>SQL Server</b> for accurate financial data.</li>
-            <li>🌐 Collaborated with global teams to enhance product deployment.</li>
-            <li>☁️ Acquired hands-on experience with <b>AWS</b> cloud services such as <b>VPCs</b>, <b>EC2</b>, and <b>S3</b>.</li>
-        </ul>
-    </div>
-    <div className="mb-8">
-        <div className="flex justify-between items-start">
-            <h3 className="text-2xl font-bold text-black mb-2">Software Engineer - CGI</h3>
-            <p className="text-lg mb-4 text-justify flex-shrink-0">September 2022 - January 2024</p>
-        </div>
-        <ul className="list-disc list-outside ml-8 text-justify">
-            <li>🌥️ Contributed to cloud migration projects using <b>Python</b>, <b>Node.js</b>, and <b>AWS</b>, enhancing efficiency and scalability.</li>
-            <li>🚀 Streamlined CI/CD pipelines with <b>GitLab CI</b>, reducing execution time by 5%.</li>
-            <li>☁️ Utilized <b>AWS</b> services (<b>EC2</b>, <b>S3</b>, <b>Lambda</b>, <b>API Gateway</b>) for scalable applications.</li>
-            <li>🐳 Employed <b>Docker</b> and <b>Kubernetes</b> for monitoring and deployments.</li>
-            <li>👥 Implemented mob programming to boost collaboration and code quality.</li>
-            <li>✅ Developed and executed unit tests using <b>Python</b> and <b>Lua</b> for 100% test coverage.</li>
-            <li>🎨 Enhanced UI/UX of an internal site using <b>React.js</b>.</li>
-            <li>📚 Designed an internal resource tool, improving UI/UX and authoring usage documentation.</li>
-        </ul>
-    </div>
-</Element>
+                    <h2 className="text-3xl font-bold text-teal-400 mb-4">Experience 💼</h2>
+                    <div className="experience-item mb-8">
+                        <h3 className="text-2xl font-bold text-black mb-2">Software Engineer - TYDIUP</h3>
+                        <p className="duration text-lg mb-4 text-justify flex-shrink-0">March 2024 - Present</p>
+                        <ul className="list-disc list-outside ml-6 text-justify">
+                            <li>🔗 Integrated <b>Twilio</b> and <b>Google Maps APIs</b> to enhance user interaction with real-time notifications and geolocation services.</li>
+                            <li>📊 Managed databases using <b>PostgreSQL</b> within <b>AWS RDS</b> for high performance and reliability.</li>
+                            <li>🔧 Developed responsive websites using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> to improve user engagement.</li>
+                            <li>🔐 Implemented secure authentication with <b>Firebase</b> to protect user data and privacy.</li>
+                            <li>🪄 Developed a <b>Node.js</b>-based SSO system for improved user accessibility and security.</li>
+                            <li>☁️ Orchestrated <b>AWS</b> deployment using <b>EC2</b> and <b>S3</b> for efficient and scalable infrastructure.</li>
+                            <li>✅ Configured and tested OTP functionality with <b>Twilio</b> and <b>Amazon SNS</b> using <b>Postman</b> for code verification.</li>
+                        </ul>
+                    </div>
+                    <div className="experience-item mb-8">
+                        <h3 className="text-2xl font-bold text-black mb-2">Software Engineer - Light & Wonder</h3>
+                        <p className="duration text-lg mb-4 text-justify flex-shrink-0">January 2024 - May 2024</p>
+                        <ul className="list-disc list-outside ml-6 text-justify">
+                            <li>🔄 Refactored <b>C#</b> backend systems to improve efficiency and code readability.</li>
+                            <li>🌍 Directed the launch of an international backend gaming platform.</li>
+                            <li>🐛 Addressed critical issues in the backend using <b>C#</b>, reducing system bugs by 10%.</li>
+                            <li>💹 Executed SQL queries using <b>SQL Server</b> for accurate financial data.</li>
+                            <li>🌐 Collaborated with global teams to enhance product deployment.</li>
+                            <li>☁️ Acquired hands-on experience with <b>AWS</b> cloud services such as <b>VPCs</b>, <b>EC2</b>, and <b>S3</b>.</li>
+                        </ul>
+                    </div>
+                    <div className="experience-item mb-8">
+                        <h3 className="text-2xl font-bold text-black mb-2">Software Engineer - CGI</h3>
+                        <p className="duration text-lg mb-4 text-justify flex-shrink-0">September 2022 - January 2024</p>
+                        <ul className="list-disc list-outside ml-6 text-justify">
+                            <li>🌥️ Contributed to cloud migration projects using <b>Python</b>, <b>Node.js</b>, and <b>AWS</b>, enhancing efficiency and scalability.</li>
+                            <li>🚀 Streamlined CI/CD pipelines with <b>GitLab CI</b>, reducing execution time by 5%.</li>
+                            <li>☁️ Utilized <b>AWS</b> services (<b>EC2</b>, <b>S3</b>, <b>Lambda</b>, <b>API Gateway</b>) for scalable applications.</li>
+                            <li>🐳 Employed <b>Docker</b> and <b>Kubernetes</b> for monitoring and deployments.</li>
+                            <li>👥 Implemented mob programming to boost collaboration and code quality.</li>
+                            <li>✅ Developed and executed unit tests using <b>Python</b> and <b>Lua</b> for 100% test coverage.</li>
+                            <li>🎨 Enhanced UI/UX of an internal site using <b>React.js</b>.</li>
+                            <li>📚 Designed an internal resource tool, improving UI/UX and authoring usage documentation.</li>
+                        </ul>
+                    </div>
+                </Element>
 
-<Element name="projects" className="bg-white text-darkGray p-6 section">
-    <h2 className="text-3xl font-bold text-teal-400 mb-4">Projects 🚀</h2>
-    <div className="project mb-8">
-        <h3 className="text-2xl font-semibold text-black"><a href="https://github.com/SachinSethi99/SaberTesting" className="text-black hover:underline">BBC Web Scraper 📄📰</a></h3>
-        <p className="text-lg text-justify">
-            Built a web scraper using <b>Python</b> for the backend and <b>Next.js</b> for the frontend. It gathers news articles from the BBC website, cleans and processes the data, and stores the information in a <b>PostgreSQL</b> database.
-        </p>
-    </div>
-    <div className="project mb-8">
-        <h3 className="text-2xl font-semibold text-black"><a href="https://github.com/SachinSethi99/Test_Social_Media" className="text-black hover:underline">Facebook Clone 📸👥</a></h3>
-        <p className="text-lg text-justify">
-            Created a Facebook clone using <b>React Native</b>. The app includes user authentication, profile creation, and the ability to post updates and images. The backend is powered by <b>Node.js</b> with data stored in <b>MySQL DB</b>.
-        </p>
-    </div>
-    <div className="project mb-8">
-        <h3 className="text-2xl font-semibold text-black"><a href="https://github.com/SachinSethi99/AlienGame" className="text-black hover:underline">Alien Collision Game 👾🎮</a></h3>
-        <p className="text-lg text-justify">
-            Developed an alien collision game using <b>Java</b> with a GUI created with <b>Processing</b>. Players control a spaceship and avoid collisions with aliens, with scores tracked and displayed.
-        </p>
-    </div>
-    <div className="project mb-8">
-        <h3 className="text-2xl font-semibold text-black"><a href="https://github.com/SachinSethi99/Falling_Car_Game" className="text-black hover:underline">Falling Car Game 🚗💥</a></h3>
-        <p className="text-lg text-justify">
-            Created a <b>Java</b>-based game where players control a car that dodges falling obstacles and collects points. The game increases in difficulty as the player progresses.
-        </p>
-    </div>
-    <div className="project mb-8">
-        <h3 className="text-2xl font-semibold text-black"><a href="https://github.com/SachinSethi99/TestingABlog" className="text-black hover:underline">API Functionality Tester 📑🔍</a></h3>
-        <p className="text-lg text-justify">
-            Developed a project using <b>Node.js</b> to test API functionality with various test cases, ensuring reliability and performance of different API endpoints.
-        </p>
-    </div>
-</Element>
-
+                <Element name="projects" className="bg-white text-darkGray p-6 section">
+                    <h2 className="text-3xl font-bold text-teal-400 mb-4">Projects 🚀</h2>
+                    <div className="project mb-8">
+                        <h3 className="text-2xl font-semibold text-black"><a href="https://github.com/SachinSethi99/SaberTesting" className="text-black hover:underline">BBC Web Scraper 📄📰</a></h3>
+                        <p className="text-lg text-justify">
+                            Built a web scraper using <b>Python</b> for the backend and <b>Next.js</b> for the frontend. It gathers news articles from the BBC website, cleans and processes the data, and stores the information in a <b>PostgreSQL</b> database.
+                        </p>
+                    </div>
+                    <div className="project mb-8">
+                        <h3 className="text-2xl font-semibold text-black"><a href="https://github.com/SachinSethi99/Test_Social_Media" className="text-black hover:underline">Facebook Clone 📸👥</a></h3>
+                        <p className="text-lg text-justify">
+                            Created a Facebook clone using <b>React Native</b>. The app includes user authentication, profile creation, and the ability to post updates and images. The backend is powered by <b>Node.js</b> with data stored in <b>MySQL DB</b>.
+                        </p>
+                    </div>
+                    <div className="project mb-8">
+                        <h3 className="text-2xl font-semibold text-black"><a href="https://github.com/SachinSethi99/AlienGame" className="text-black hover:underline">Alien Collision Game 👾🎮</a></h3>
+                        <p className="text-lg text-justify">
+                            Developed an alien collision game using <b>Java</b> with a GUI created with <b>Processing</b>. Players control a spaceship and avoid collisions with aliens, with scores tracked and displayed.
+                        </p>
+                    </div>
+                    <div className="project mb-8">
+                        <h3 className="text-2xl font-semibold text-black"><a href="https://github.com/SachinSethi99/Falling_Car_Game" className="text-black hover:underline">Falling Car Game 🚗💥</a></h3>
+                        <p className="text-lg text-justify">
+                            Created a <b>Java</b>-based game where players control a car that dodges falling obstacles and collects points. The game increases in difficulty as the player progresses.
+                        </p>
+                    </div>
+                    <div className="project mb-8">
+                        <h3 className="text-2xl font-semibold text-black"><a href="https://github.com/SachinSethi99/TestingABlog" className="text-black hover:underline">API Functionality Tester 📑🔍</a></h3>
+                        <p className="text-lg text-justify">
+                            Developed a project using <b>Node.js</b> to test API functionality with various test cases, ensuring reliability and performance of different API endpoints.
+                        </p>
+                    </div>
+                </Element>
             </main>
 
             <footer className="bg-darkGray text-center py-4">
-    <div className="contact-info text-white">
-        <p>📧 <strong>Email:</strong> <a href="mailto:sachinsethi2017@gmail.com" className="text-white">sachinsethi2017@gmail.com</a></p>
-        <p>📞 <strong>Phone:</strong> +44 7481080451</p>
-        <p>💼 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/Sachin-Sethi-SS" className="text-teal-400 hover:underline">Sachin-Sethi-SS</a></p>
-        <p>🖥️ <strong>GitHub:</strong> <a href="https://github.com/SachinSethi99" className="text-teal-400 hover:underline">SachinSethi99</a></p>
-        <p>📍 <strong>Location:</strong> Manchester, UK</p>
-    </div>
-    <p className="text-lg text-white mt-4">&copy; 2024 Sachin Sethi. All rights reserved. 🌟</p>
-    <p className="text-lg text-white">Made with 💻, ☕, and a lot of ❤️.</p>
-    <button 
-        onClick={() => scroll.scrollToTop()} 
-        className={`fixed bottom-4 right-4 bg-teal-400 text-white p-2 rounded-full ${showScroll ? 'block' : 'hidden'}`}
-    >
-        ↑
-    </button>
-</footer>
-
+                <div className="contact-info text-white">
+                    <p>📧 <strong>Email:</strong> <a href="mailto:sachinsethi2017@gmail.com" className="text-white">sachinsethi2017@gmail.com</a></p>
+                    <p>📞 <strong>Phone:</strong> +44 7481080451</p>
+                    <p>💼 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/Sachin-Sethi-SS" className="text-teal-400 hover:underline">Sachin-Sethi-SS</a></p>
+                    <p>🖥️ <strong>GitHub:</strong> <a href="https://github.com/SachinSethi99" className="text-teal-400 hover:underline">SachinSethi99</a></p>
+                    <p>📍 <strong>Location:</strong> Manchester, UK</p>
+                </div>
+                <p className="text-lg text-white mt-4">&copy; 2024 Sachin Sethi. All rights reserved. 🌟</p>
+                <p className="text-lg text-white">Made with 💻, ☕, and a lot of ❤️.</p>
+                <button
+                    onClick={() => scroll.scrollToTop()}
+                    className={`fixed bottom-4 right-4 bg-teal-400 text-white p-2 rounded-full ${showScroll ? 'block' : 'hidden'}`}
+                >
+                    ↑
+                </button>
+            </footer>
         </div>
     );
 };

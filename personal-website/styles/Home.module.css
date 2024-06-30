@@ -123,7 +123,7 @@ body {
   padding: 0.75rem 1.5rem;
   font-size: 1.2rem;
   color: var(--dark-bg);
-  background-color: var(--light-blue);
+  background-color: var (--light-blue);
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -131,7 +131,7 @@ body {
 }
 
 .downloadButton:hover {
-  background-color: var(--green);
+  background-color: var (--green);
 }
 
 .section {
@@ -172,7 +172,7 @@ body {
   border-radius: 4px;
   text-align: center;
   font-size: 1.2rem;
-  color: var(--gray);
+  color: var (--gray);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -183,23 +183,30 @@ body {
 .job h3 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: var(--light-blue);
+  color: var (--light-blue);
   margin-bottom: 0.5rem;
 }
 
 .duration {
   font-size: 1.2rem;
-  color: var(--gray);
+  color: var (--gray);
   margin-bottom: 1rem;
 }
 
 .job ul {
-  margin-left: 2rem;
+  margin-left: 1.5rem; /* Adjusted margin */
+  padding-left: 1rem; /* Adjusted padding */
+}
+
+.job ul li {
+  list-style-position: inside;
+  text-align: left;
+  margin-left: 0; /* Ensure no additional left margin */
 }
 
 .footer {
-  background-color: var(--dark-blue);
-  color: var(--gray);
+  background-color: var (--dark-blue);
+  color: var (--gray);
   text-align: center;
   padding: 1rem 0;
 }
@@ -275,7 +282,7 @@ body {
   }
 
   .nav-item:hover {
-    border-color: var(--green);
+    border-color: var (--green);
   }
 
   .contact-info {
@@ -333,7 +340,7 @@ body {
   }
 
   .nav-item:hover {
-    border-color: var(--green);
+    border-color: var (--green);
   }
 
   .contact-info {
@@ -359,12 +366,12 @@ body {
 }
 
 .skillList li {
-  background-color: var(--dark-blue);
+  background-color: var (--dark-blue);
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-align: left;
   font-size: 1.2rem;
-  color: var(--gray);
+  color: var (--gray);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -377,4 +384,48 @@ body {
 
 .offset {
   padding-top: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .experience-item {
+    margin-bottom: 2rem;
+  }
+
+  .experience-item h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var (--light-blue);
+    margin-bottom: 0.5rem;
+  }
+
+  .experience-item .duration {
+    font-size: 1.2rem;
+    color: var (--gray);
+    margin-bottom: 1rem;
+  }
+
+  .experience-item ul {
+    margin-left: 1rem; /* Adjusted margin to move items slightly to the left */
+    padding-left: 1rem;
+  }
+
+  .experience-item ul li {
+    list-style-position: inside;
+    text-align: left;
+  }
+
+  .education-item ul {
+    margin-left: 1rem; /* Ensure similar margin for the education section */
+    padding-left: 1rem;
+  }
+
+  .education-item ul li {
+    list-style-position: inside;
+    text-align: left;
+  }
+}
+
+.job ul {
+  margin-left: 1rem; /* Adjusted margin to move items slightly to the left */
+  padding-left: 1rem;
 }
