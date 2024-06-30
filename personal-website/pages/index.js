@@ -20,11 +20,12 @@ const Home = () => {
 
     return (
         <div className="min-h-screen flex flex-col font-sans">
-            <Head>
-                <title>Sachin Sethi</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+  <Head>
+    <title>Sachin Sethi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/apple-touch-icon.png" />
+</Head>
+
 
             <header className="fixed top-0 left-0 w-full bg-darkGray shadow-md z-50">
                 <nav className="flex justify-center py-2 md:py-4">
