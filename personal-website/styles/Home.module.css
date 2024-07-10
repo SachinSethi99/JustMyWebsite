@@ -429,3 +429,67 @@ body {
   margin-left: 1rem; /* Adjusted margin to move items slightly to the left */
   padding-left: 1rem;
 }
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--dark-gray);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.react-calendar {
+  background-color: var(--dark-bg);
+  color: var(--gray);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.react-calendar__tile {
+  color: var(--gray);
+}
+
+.react-calendar__tile--active {
+  background-color: var(--light-blue);
+  color: var(--dark-bg);
+}
+
+.react-calendar__tile--now {
+  background-color: var(--green);
+  color: var(--dark-bg);
+}
+
+.react-calendar__navigation button {
+  color: var(--light-blue);
+  background: none;
+  border: none;
+}
+
+.react-calendar__navigation button:hover,
+.react-calendar__navigation button:focus {
+  background-color: var(--green);
+  color: var(--dark-bg);
+}
+
+@media (max-width: 768px) {
+  .calendar-container {
+    padding: 1rem;
+  }
+
+  .react-calendar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-container {
+    padding: 0.5rem;
+  }
+
+  .react-calendar {
+    width: 100%;
+  }
+}

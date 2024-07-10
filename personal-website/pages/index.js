@@ -2,9 +2,13 @@ import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import { Link, Element, animateScroll as scroll } from 'react-scroll';
 import 'tailwindcss/tailwind.css';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';  // Optional CSS for default styling
+import { enGB } from 'date-fns/locale'; // Import the locale you need
 
 const Home = () => {
     const [showScroll, setShowScroll] = useState(false);
+    const [date, setDate] = useState(new Date());
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,12 +24,11 @@ const Home = () => {
 
     return (
         <div className="min-h-screen flex flex-col font-sans">
-  <Head>
-    <title>Sachin Sethi</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/apple-touch-icon.png" />
-</Head>
-
+            <Head>
+                <title>Sachin Sethi</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="icon" href="/apple-touch-icon.png" />
+            </Head>
 
             <header className="fixed top-0 left-0 w-full bg-darkGray shadow-md z-50">
                 <nav className="flex justify-center py-2 md:py-4">
@@ -44,6 +47,9 @@ const Home = () => {
                         </li>
                         <li>
                             <Link to="projects" smooth={true} duration={500} offset={-100} className="text-teal-400 font-bold text-sm md:text-base hover:text-teal-500">Projects</Link>
+                        </li>
+                        <li>
+                            <Link to="calendar" smooth={true} duration={500} offset={-100} className="text-teal-400 font-bold text-sm md:text-base hover:text-teal-500">Calendar</Link>
                         </li>
                     </ul>
                 </nav>
@@ -209,6 +215,14 @@ const Home = () => {
                         <p className="text-lg text-justify">
                             Developed a project using <b>Node.js</b> to test API functionality with various test cases, ensuring reliability and performance of different API endpoints.
                         </p>
+                    </div>
+                </Element>
+
+                {/* Add Calendar component section */}
+                <Element name="calendar" className="bg-white p-6 text-darkGray section">
+                    <h2 className="text-3xl font-bold text-teal-400 mb-4">Calendar 📅</h2>
+                    <div className="flex justify-center">
+                        <Calendar onChange={setDate} value={date} locale={enGB} />
                     </div>
                 </Element>
             </main>
