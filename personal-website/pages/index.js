@@ -256,7 +256,7 @@ const Home = () => {
                             locale="en-GB"
                         />
                         <div className="mt-4">
-                            <label className="block text-sm font-medium text-gray-700">Start Date</label>
+                            <label className="block text-sm font-medium text-gray-700"><b>Start Date</b></label>
                             <input
                                 type="date"
                                 value={startDate.toISOString().substr(0, 10)}
@@ -265,7 +265,7 @@ const Home = () => {
                             />
                         </div>
                         <div className="mt-4">
-                            <label className="block text-sm font-medium text-gray-700">End Date</label>
+                            <label className="block text-sm font-medium text-gray-700"><b>End Date</b></label>
                             <input
                                 type="date"
                                 value={endDate.toISOString().substr(0, 10)}
@@ -275,9 +275,8 @@ const Home = () => {
                         </div>
                         <button
                             onClick={validateDates}
-                            className="bg-teal-400 text-darkGray py-2 px-4 rounded hover:bg-teal-500 transition mt-4"
-                        >
-                            Confirm Dates
+                            className="bg-teal-400 text-darkGray py-2 px-4 rounded hover:bg-teal-500 transition mt-4">
+                            <b>Confirm Dates</b>
                         </button>
                     </div>
                 </Element>
