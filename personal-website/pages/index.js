@@ -3,12 +3,12 @@ import Head from 'next/head';
 import { Link, Element, animateScroll as scroll } from 'react-scroll';
 import 'tailwindcss/tailwind.css';
 import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';  // Optional CSS for default styling
-import { enGB } from 'date-fns/locale'; // Import the locale you need
+import 'react-calendar/dist/Calendar.css';
 
 const Home = () => {
     const [showScroll, setShowScroll] = useState(false);
-    const [date, setDate] = useState(new Date());
+    const [date, setDate] = useState([new Date(), new Date()]);
+    const [startDate, endDate] = date;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,6 +21,34 @@ const Home = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const validateDates = () => {
+        const today = new Date();
+        if (startDate > today || endDate > today) {
+            alert("Can't pick a date in the future");
+            return false;
+        }
+        if (startDate > endDate) {
+            alert("End date can't be before start date");
+            return false;
+        }
+        alert("Dates are fine");
+        return true;
+    };
+
+    const handleDateChange = (dates) => {
+        setDate(dates);
+    };
+
+    const handleStartDateChange = (e) => {
+        const newStartDate = new Date(e.target.value);
+        setDate([newStartDate, endDate]);
+    };
+
+    const handleEndDateChange = (e) => {
+        const newEndDate = new Date(e.target.value);
+        setDate([startDate, newEndDate]);
+    };
 
     return (
         <div className="min-h-screen flex flex-col font-sans">
@@ -218,11 +246,39 @@ const Home = () => {
                     </div>
                 </Element>
 
-                {/* Add Calendar component section */}
                 <Element name="calendar" className="bg-white p-6 text-darkGray section">
                     <h2 className="text-3xl font-bold text-teal-400 mb-4">Calendar 📅</h2>
-                    <div className="flex justify-center">
-                        <Calendar onChange={setDate} value={date} locale={enGB} />
+                    <div className="calendar-container flex flex-col items-center">
+                        <Calendar
+                            onChange={handleDateChange}
+                            value={date}
+                            selectRange={true}
+                            locale="en-GB"
+                        />
+                        <div className="mt-4">
+                            <label className="block text-sm font-medium text-gray-700">Start Date</label>
+                            <input
+                                type="date"
+                                value={startDate.toISOString().substr(0, 10)}
+                                onChange={handleStartDateChange}
+                                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            />
+                        </div>
+                        <div className="mt-4">
+                            <label className="block text-sm font-medium text-gray-700">End Date</label>
+                            <input
+                                type="date"
+                                value={endDate.toISOString().substr(0, 10)}
+                                onChange={handleEndDateChange}
+                                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            />
+                        </div>
+                        <button
+                            onClick={validateDates}
+                            className="bg-teal-400 text-darkGray py-2 px-4 rounded hover:bg-teal-500 transition mt-4"
+                        >
+                            Confirm Dates
+                        </button>
                     </div>
                 </Element>
             </main>
